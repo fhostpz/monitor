@@ -1,0 +1,233 @@
+ <!DOCTYPE html>
+
+<html>
+	<head>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+		
+		<!-- <script src="jquery.js"></script> -->
+		<!-- <script src="bootstrap-treeview.js"></script> -->
+		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+		<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+		
+		<!-- Bootstrap 4 -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		
+		<!-- Custom CSS -->
+		<style>
+			.hrNoPadd{ padding: 0px;
+				margin: 0px;
+				border-color: #CACACA;
+			}
+			
+			.btnGroup{
+				margin: 20px 0px 0px 0px;
+				float: right;
+			}
+		</style>
+		<script>
+			$(function(){
+			  $('[data-toggle="popover"]').popover()
+			});
+		
+		</script>
+
+		<meta charset = "utf-8">
+		<meta name = "viewport" content = "width=device-width, initial-scale=1">
+	</head>
+	
+	<body>
+		<div class = "container-fluid">
+			<h1> Cyber Security Progress Monitoring - Sime Darby Plantation </h1>
+		</div>	
+		<!-- Nav Bar -->
+		<ul class="nav nav-tabs">
+			<li class="nav-item">
+				<a class="nav-link" href="../Location.html">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="../Location.html">Location</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link	" href="../Identify_Sub_Process.html">Sub Process</a>
+			</li>
+		</ul>
+		<!-- Nav Bar End -->
+		
+		<!-- Sidebar -->	
+		<div>
+			<div class ="row" id ="sidebar">
+				<div class="col-md-2 float-left col-1 pl-0 pr-0 collapse width show" id="sidebar">
+					<br>
+					<div class="list-group border-0 card text-center text-md-left">
+					
+					<a href="#menu1" class="list-group-item d-inline-block collapsed" data-toggle="collapse" aria-expanded="false">
+						<i class="fa fa-dashboard"></i> 
+						<span class="d-none d-md-inline">Sime Darby Plantation </span> 
+					</a>
+					
+					<div class="collapse" id="menu1" data-parent="#sidebar">
+						<a href="#menu1sub1" class="list-group-item" data-toggle="collapse" aria-expanded="false">Identify</a>
+						<div class="collapse" id="menu1sub1" data-parent="#menu1">
+							<a href="Asset Management.html" class="list-group-item" data-parent="#menu1sub1">Asset Management</a>
+							<a href="Business Environment.html" class="list-group-item" data-parent="#menu1sub1">Business Environment</a>
+							<a href="Governance.html" class="list-group-item" data-parent="#menu1sub1">Governance</a>
+							<a href="Risk Assessment.html" class="list-group-item" data-parent="#menu1sub1">Risk Assessment</a>
+							<a href="Risk Management Strategy.html" class="list-group-item" data-parent="menu1sub1" aria-expanded="false">Risk Management Strategy </a>
+						</div>
+						
+						<a href="#menu1sub2" class="list-group-item" data-toggle="collapse" aria-expanded="false">Protect</a>
+							<div class="collapse" id="menu1sub2" data-parent="#menu1">
+								<a href="#" class="list-group-item" data-parent="#menu1sub2">Access Control</a>
+								<a href="#" class="list-group-item" data-parent="#menu1sub1">Awareness Training</a>
+								<a href="#menu1sub1sub1" class="list-group-item" data-toggle="collapse" aria-expanded="false">Data Security</a>
+									<div class="collapse" id="menu1sub1sub1">
+										<a href="#" class="list-group-item" data-parent="#menu1sub1sub1">Control</a>
+									</div>
+								<a href="#" class="list-group-item" data-parent="#menu1sub1">Information Protection Processes and Procedures</a>
+								<a href="#menu1sub1sub2" class="list-group-item" data-toggle="collapse" aria-expanded="false">Maintenance </a>
+								<div class="collapse" id="menu1sub1sub2">
+									<a href="#" class="list-group-item">Control</a>
+								</div>
+							</div>
+					</div>
+				</div>
+			</div>
+			<!-- Sidebar End -->
+			<div class = "col-md-10 float-left col px-5 pl-md-2 pt-2" >
+					<hr>
+					<div class="row">
+						<div class="col">
+							<b>Control</b>
+						</div>
+						<div class="col">
+							<b>Percentage Done</b>
+						</div>
+					</div>
+					<hr>
+					<div class="row">
+						<div class="col">
+							<b>Organizational information security policy is established.</b> <br>
+							<br>
+							<p>
+								1. Prepare and submit a copy of the information security policy and ensure the following. <br>
+
+								a. The policy is complete and has been approved by a governance structure within the organization. <br>
+								b. The policy is communicated to employees. <br>
+							</p>
+						</div>
+						<div class="col">
+							<div class="form-check form-check-inline">
+								  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+								  <label class="form-check-label" for="inlineRadio1">0%</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+								<label class="form-check-label" for="inlineRadio1">25%</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+								<label class="form-check-label" for="inlineRadio1">50%</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+								<label class="form-check-label" for="inlineRadio1">75%</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5">
+								<label class="form-check-label" for="inlineRadio1">100%</label>
+							</div>
+						</div>
+					</div>
+					<hr class="hrNoPadd">
+					<div class="row" style="background-color: #E3E2E2; padding:0; margin:0;">
+						<div class="col">
+						<br>
+							<b>Information security roles and responsibilities are coordinated and aligned with internal roles and external partners.</b>
+							<br> <br>
+							<p>
+								1. Information security roles and responsibilities are defined.  Roles and responsibilities may be defined in policies, job descriptions, agreements, RACI charts, hierarchy charts and/or contracts and ensure the following. <br>
+
+								a. There is sufficient independence within the information security roles in order to provide adequate separation of duties for critical functions.<br>
+								b. Review contracts, nondisclosure agreements (NDAs) and service level agreements (SLAs) with critical vendors to determine if cybersecurity controls and incident notification are addressed appropriately.<br>
+							</p>
+						</div>
+						<div class="col">
+						<br>
+							<div class="form-check form-check-inline">
+								  <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio1" value="option1">
+								  <label class="form-check-label" for="inlineRadio1">0%</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio2" value="option2">
+								<label class="form-check-label" for="inlineRadio1">25%</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio3" value="option3">
+								<label class="form-check-label" for="inlineRadio1">50%</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio4" value="option4">
+								<label class="form-check-label" for="inlineRadio1">75%</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio5" value="option5">
+								<label class="form-check-label" for="inlineRadio1">100%</label>
+							</div>
+						</div>
+					</div>
+					<hr class="hrNoPadd">
+					<div class="row" style="	padding:0; margin:0;">
+						<div class="col">
+						<br>
+							<b>Legal and regulatory requirements regarding cybersecurity, including privacy and civil liberties obligations, are understood and managed.</b>
+							<br> <br>
+							<p>
+							1. Prepare and submit a list of all relevant legal and regulatory requirements for the organization and ensure the following:<br> <br>
+
+							a. The cybersecurity program is mapped to legal and regulatory requirements.<br>
+							b. Review any recent regulatory cybersecurity exams or audits.  If any exceptions were noted in audits, determine how the organization responded to exceptions.<br> 
+							c. Determine if critical third-party contracts are reviewed by legal counsel prior to execution. <br>
+							d. Determine if there is a formalized process in place to monitor and review changes in cybersecurity laws and regulations. <br>
+							</p>
+						</div>
+						<div class="col">
+						<br>
+							<div class="form-check form-check-inline">
+								  <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio1" value="option1">
+								  <label class="form-check-label" for="inlineRadio1">0%</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio2" value="option2">
+								<label class="form-check-label" for="inlineRadio1">25%</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio3" value="option3">
+								<label class="form-check-label" for="inlineRadio1">50%</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio4" value="option4">
+								<label class="form-check-label" for="inlineRadio1">75%</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio5" value="option5">
+								<label class="form-check-label" for="inlineRadio1">100%</label>
+							</div>
+						</div>
+					</div>
+				<div class="btn-group btn-group-lg btnGroup" role="group">
+					<button type="button" class="btn btn-primary">Clear</button>
+					<a tabindex="0" class="btn btn-lg btn-danger" role="button"
+					   data-toggle="popover" data-trigger="focus" data-placement="top" title="Save" data-content="Changes have been saved.">
+					   Save
+					</a>
+				</div>
+				
+			</div>
+		</div>
+	</body>
+
+
+</html>
