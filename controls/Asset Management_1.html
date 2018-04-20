@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+		<meta charset = "utf-8">
+		<meta name = "viewport" content = "width=device-width, initial-scale=1">
+		
+		<!-- CSS -->
+		<link rel="stylesheet" href="../background.css">
+		
+		<!-- Script -->
+		<script src="../popover.js"></script>
+	</head>
+	
+	<body>
+		<div class = "jumbotron jumbotron-fluid">
+			<div class="container">
+				<h1 class="display-4"> Cyber Security Progress Monitoring</h1>
+				<p class="lead">Sime Darby Plantation </p>
+			</div>
+		</div>
+		
+		<!-- Nav Bar -->
+		<div class="row-lg">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light mt-0 pt-0 noTop noBack">
+				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				  </button>
+				<div class="collapse navbar-collapse" id="navbarText">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="../Location.html">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Summary</a>
+					</li>
+				</ul>
+				</div>
+			</nav>
+		</div>
+		<!-- Nav Bar End -->
+		<!-- Breadcrumb -->
+		<div class="row-lg position-relative noTop">
+			<div class="container-fluid mt-0 pt-0 noTop">
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb whiteBack">
+						<li class="breadcrumb-item ">
+							<a href="../Location.html">Location</a>
+						</li>
+						<li class="breadcrumb-item ">
+							<a href="../Domains.html">Domains</a>
+						</li>
+						<li class="breadcrumb-item ">
+							<a href="../Identify_Sub_Process.html">Identify</a>
+						</li>
+						<li class="breadcrumb-item active">
+							Asset Management
+						</li>
+					</ol>
+				</nav>
+			</div>
+		</div>
+		<!-- Breadcrumb End -->
+		
+		<!-- Sidebar -->
+		<div class = "container-fluid position-relative goUp">
+			<div class ="row" id ="sidebar">
+				<div class="col-md-2 float-left col-1 pl-0 pr-0 collapse width show" id="sidebar">
+					<br>
+					<div class="list-group border-0 card text-center text-md-left">
+					
+					<a href="#menu1" class="list-group-item d-inline-block collapsed" data-toggle="collapse" aria-expanded="false">
+						<i class="fa fa-dashboard"></i> 
+						<span class="d-none d-md-inline">Sime Darby Plantation</span> 
+					</a>
+					
+					<div class="collapse" id="menu1" data-parent="#sidebar">
+						<a href="#menu1sub1" class="list-group-item" data-toggle="collapse" aria-expanded="false">Identify</a>
+						<div class="collapse" id="menu1sub1" data-parent="#menu1">
+							<a href="Asset Management.html" class="list-group-item" data-parent="#menu1sub1">Asset Management</a>
+							<a href="Business Environment.html" class="list-group-item" data-parent="#menu1sub1">Business Environment</a>
+							<a href="Governance.html" class="list-group-item" data-parent="#menu1sub1">Governance</a>
+							<a href="Risk Assessment.html" class="list-group-item" data-parent="#menu1sub1">Risk Assessment</a>
+							<a href="Risk Management Strategy.html" class="list-group-item" data-parent="menu1sub1" aria-expanded="false">Risk Management Strategy </a>
+						</div>
+						
+						<a href="#menu1sub2" class="list-group-item" data-toggle="collapse" aria-expanded="false">Protect</a>
+							<div class="collapse" id="menu1sub2" data-parent="#menu1">
+								<a href="#" class="list-group-item" data-parent="#menu1sub2">Access Control</a>
+								<a href="#" class="list-group-item" data-parent="#menu1sub1">Awareness Training</a>
+								<a href="#menu1sub1sub1" class="list-group-item" data-toggle="collapse" aria-expanded="false">Data Security</a>
+									<div class="collapse" id="menu1sub1sub1">
+										<a href="#" class="list-group-item" data-parent="#menu1sub1sub1">Control</a>
+									</div>
+								<a href="#" class="list-group-item" data-parent="#menu1sub1">Information Protection Processes and Procedures</a>
+								<a href="#menu1sub1sub2" class="list-group-item" data-toggle="collapse" aria-expanded="false">Maintenance </a>
+								<div class="collapse" id="menu1sub1sub2">
+									<a href="#" class="list-group-item">Control</a>
+								</div>
+							</div>
+					</div>
+				</div>
+			</div>
+			<!-- Sidebar End -->
+			<div class = "col-md-10 float-left col px-5 pl-md-2 pt-2" >
+					<hr>
+					<div class="row">
+						<div class="col">
+							<b>Control</b>
+						</div>
+						<div class="col">
+							<b>Percentage Done</b>
+						</div>
+					</div>
+					<hr>
+					<div class="row">
+						<div class="col">
+							<b>Physical devices and systems within the organization are inventoried.</b> 
+							<br>
+							<br>
+							<div class="row">
+									1. Prepare and submit a copy of physical devices and systems inventory and ensure the following:
+							</div>
+							<p>
+							
+								
+							<br>
+							a. Scope of physical devices and systems (e.g., systems that contain sensitive information, allow access to the network, or are critical to business objectives)<br>
+							b. Completeness of inventory (e.g., location, asset number, owner)
+							c. Inventory collection process ensures new devices are collected accurately and in a timely manner (e.g., automated software to detect and/or store the inventory)<br>
+							d. Frequency of inventory reviews<br><br>
+							</p>
+						</div>
+						<div class="col">
+							<div class="form-check form-check-inline">
+								  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+								  <label class="form-check-label" for="inlineRadio1">0%</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+								<label class="form-check-label" for="inlineRadio1">25%</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+								<label class="form-check-label" for="inlineRadio1">50%</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+								<label class="form-check-label" for="inlineRadio1">75%</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5">
+								<label class="form-check-label" for="inlineRadio1">100%</label>
+							</div>
+						</div>
+					</div>
+					
+					<hr class="hrNoPadd">
+					
+					<div class="row" style="background-color: #E3E2E2; padding:0; margin:0;">
+						<div class="col">
+						<br>
+							<b>Software platforms and applications within the organization are inventoried.</b>
+							<br> <br>
+							<p>
+							1. Prepare and submit a copy of software inventory and ensure the following: 
+							<br> <br>
+							Review the inventory considering the following:
+							<br> <br>
+							a. Scope of software inventory  (e.g., software that processes, stores or accesses sensitive information or is critical to business objectives)<br>
+							b. Completeness of inventory (e.g., version, system, vendor, owner)<br>
+							c. Inventory collection process ensures new software is collected accurately and in a timely manner (e.g., automated software to detect and/or store the inventory)<br>
+							d. Frequency of inventory reviews<br>
+							</p>
+						</div>
+						<div class="col">
+						<br>
+							<div class="form-check form-check-inline">
+								  <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio1" value="option1">
+								  <label class="form-check-label" for="inlineRadio1">0%</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio2" value="option2">
+								<label class="form-check-label" for="inlineRadio1">25%</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio3" value="option3">
+								<label class="form-check-label" for="inlineRadio1">50%</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio4" value="option4">
+								<label class="form-check-label" for="inlineRadio1">75%</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio5" value="option5">
+								<label class="form-check-label" for="inlineRadio1">100%</label>
+							</div>
+						</div>
+					</div>
+					<hr class="hrNoPadd">
+					<div class="row" style="padding:0; margin:0;">
+						<div class="col">
+						<br>
+							<b>Organizational communication and data flows are mapped.</b>
+							<br> <br>
+							<p>
+							1. Ensure the organization maintains accurate and current copies of data flow diagram(s) (DFD), logical network diagram(s) (LND), and/or other diagrams to show organizational communication and data flow. 
+							</p>
+						</div>
+						<div class="col">
+						<br>
+							<div class="form-check form-check-inline">
+								  <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio1" value="option1">
+								  <label class="form-check-label" for="inlineRadio1">0%</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio2" value="option2">
+								<label class="form-check-label" for="inlineRadio1">25%</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio3" value="option3">
+								<label class="form-check-label" for="inlineRadio1">50%</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio4" value="option4">
+								<label class="form-check-label" for="inlineRadio1">75%</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio5" value="option5">
+								<label class="form-check-label" for="inlineRadio1">100%</label>
+							</div>
+						</div>
+					</div>
+					<hr class="hrNoPadd">
+					<div class="row" style="background-color: #E3E2E2; padding:0; margin:0;">
+						<div class="col">
+							<br>
+							<b>External information systems are cataloged.</b> <br> <br>
+							1. If relies on information systems hosted by third parties then prepare and submit a copy of the external systems inventory.<br> <br>  
+						<p>
+							Review the third-party inventory considering the following: <br>
+							<br>
+							a. Scope of external systems (e.g., systems that store, process or access sensitive information or are critical to business objectives).<br>
+							b. Completeness of inventory (e.g., location, third party, owner, etc.)<br>
+							c. Inventory collection process ensures new systems are collected accurately and in a timely manner (e.g,. automated software to detect and/or store the inventory) <br>
+							d. Frequency of inventory reviews <br>
+						</p>
+						</div>
+						<div class="col">
+						<br>
+							<div class="form-check form-check-inline">
+								  <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio1" value="option1">
+								  <label class="form-check-label" for="inlineRadio1">0%</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio2" value="option2">
+								<label class="form-check-label" for="inlineRadio1">25%</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio3" value="option3">
+								<label class="form-check-label" for="inlineRadio1">50%</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio4" value="option4">
+								<label class="form-check-label" for="inlineRadio1">75%</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio5" value="option5">
+								<label class="form-check-label" for="inlineRadio1">100%</label>
+							</div>
+						</div>
+					</div>
+					<hr class="hrNoPadd">
+					<div class="row" style="padding:0; margin:0;">
+						<div class="col">
+							<br>
+							<b>Resources (e.g., hardware, devices, data and software) are prioritized based on their classification, criticality and business value.</b> <br> <br>
+							1. If relies on infoc rmation systems hosted by third parties then prepare and submit a copy of the external systems inventory.<br> <br>  
+						<p>
+							1. Prepare and submit a copy of  data classification program (classification may also be identified in the risk assessment or business impact analysis).<br>
+
+							2. Review the program to determine if key resources (e.g., hardware, devices, data, software) are classified and prioritized based on criticality and business value. <br>
+						</p>
+						</div>
+						<div class="col">
+						<br>
+							<div class="form-check form-check-inline">
+								  <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio1" value="option1">
+								  <label class="form-check-label" for="inlineRadio1">0%</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio2" value="option2">
+								<label class="form-check-label" for="inlineRadio1">25%</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio3" value="option3">
+								<label class="form-check-label" for="inlineRadio1">50%</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio4" value="option4">
+								<label class="form-check-label" for="inlineRadio1">75%</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio5" value="option5">
+								<label class="form-check-label" for="inlineRadio1">100%</label>
+							</div>
+						</div>
+					</div>
+					<hr class="hrNoPadd">
+					<div class="row" style="background-color: #E3E2E2; padding:0; margin:0;">
+						<div class="col">
+							<br>
+							<b>Cybersecurity roles and responsibilities for the entire workforce and third-party stakeholders (e.g., suppliers, customers, partners) are established.</b> <br> <br>
+						<p>
+							1. Prepare and submit cybersecurity policies, information security policies, job descriptions, agreements, RACI charts, service level agreements (SLAs) and/or contracts that include cybersecurity roles and responsibilities.<br>
+						</p>
+						</div>
+						<div class="col">
+						<br>
+							<div class="form-check form-check-inline">
+								  <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio1" value="option1">
+								  <label class="form-check-label" for="inlineRadio1">0%</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio2" value="option2">
+								<label class="form-check-label" for="inlineRadio1">25%</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio3" value="option3">
+								<label class="form-check-label" for="inlineRadio1">50%</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio4" value="option4">
+								<label class="form-check-label" for="inlineRadio1">75%</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio5" value="option5">
+								<label class="form-check-label" for="inlineRadio1">100%</label>
+							</div>
+						</div>
+					</div>
+				<div class="btn-group btn-group-lg btnGroup" role="group">
+					<button type="button" class="btn btn-primary">Clear</button>
+					<a tabindex="0" class="btn btn-lg btn-danger" role="button"
+					   data-toggle="popover" data-trigger="focus" data-placement="top" title="Save" data-content="Changes have been saved.">
+					   Save
+					</a>
+				</div>
+				
+			</div>
+		</div>
+		</div>
+	</body>
+
+
+</html>
